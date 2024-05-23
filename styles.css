@@ -7,13 +7,14 @@ body{
     background-color: rgb(16, 17, 16);
 }
 nav{
+    background-color: black;
     display: flex;
     flex-direction: column;
     position: sticky;
     top: 0;
     justify-content: space-between;
     align-items: center;
-    padding: .9rem .9rem;
+    margin:.9rem;
 
 }
 .firstTop{
@@ -25,14 +26,18 @@ margin: 1rem;
     display: flex;
     justify-content: space-between;
     WIDTH: 100vw;
+   
+    height: 4vh;
     
 }
 .linkBox{
     display: flex;
     justify-content: space-evenly;
-    min-width: 70vw;
+    min-width: 75vw;
+    height:fit-content;
     margin: 0 20px;
     flex-wrap: wrap;
+    background-color: rgb(42, 41, 41);
 }
 .contactUs{
     height: fit-content;
@@ -41,28 +46,59 @@ margin: 1rem;
     background-color: #04b5f5;
 
 }
-.firstBottom div h3{
+.firstBottom  h3{
     color: white;
     position: absolute;
     top: 25%;
 }
 .firstBottom div{
     position: relative;
+    width: 8vw;
+    height: 4vh;
 }
 .links a{
     color: white;
     text-decoration: none;
     margin: auto;
+    position: absolute;
+    top: 25%;
+    min-height: fit-content;
+
 }
 .contactUs{
     border-radius: 40px ;
-    font-size: 1.5rem;
-    position: relative;
-    top: 25%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 2vh;
+    width: 20vw}
+.contactUs a{
+    text-decoration: none;
+    color: white;
 }
 .links{
-    position: relative;
-    top: 25%;
-
+    max-width: 1vh;
 }
 
+.home{
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 45px;
+    border: 2px solid white;
+
+
+}
+.home .intro{
+    color: white;
+}
+.home img{
+    width: 25%;
+    height: 50%;
+    border-radius: 20vh;
+}
