@@ -3,6 +3,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --border: rgb(2, 198, 242);
+   
+    --bgcolor:rgb(24, 23, 23);
+    --fontbtn:"Merriweather", serife;
+    --borderhover: rgb(163, 0, 251);
+    --bordershadow:rgb(251, 0, 255);
+
+}
 body{
     background-color: rgb(16, 17, 16);
 }
@@ -21,6 +30,11 @@ nav{
     align-content: center;
     color: white;
 margin: 1rem;
+font-size:2rem;
+
+font-family: "Pacifico", cursive;
+
+  font-style: normal;
 }
 .firstBottom{
     display: flex;
@@ -38,18 +52,24 @@ margin: 1rem;
     margin: 0 20px;
     flex-wrap: wrap;
     background-color: rgb(42, 41, 41);
+    border-radius: 4rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .contactUs{
     height: fit-content;
     width: fit-content;
     color: white;
     background-color: #04b5f5;
-
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.firstBottom  h3{
+.firstBottom  h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 4rem;
     color: white;
     position: absolute;
     top: 25%;
+    font-size: 1rem; 
+    margin-left: 6vh;
 }
 .firstBottom div{
     position: relative;
@@ -57,12 +77,22 @@ margin: 1rem;
     height: 4vh;
 }
 .links a{
-    color: white;
+    
     text-decoration: none;
     margin: auto;
     position: absolute;
     top: 25%;
     min-height: fit-content;
+    color: white;
+    text-shadow: 
+        -2px -2px 0 #000,  /* Top left shadow */
+        2px -2px 0 #000,   /* Top right shadow */
+        -2px 2px 0 #000,   /* Bottom left shadow */
+        2px 2px 0 #000;    /* Bottom right shadow */
+
+}
+.links a:hover{
+    color:blueviolet;
 
 }
 .contactUs{
@@ -82,23 +112,58 @@ margin: 1rem;
 }
 
 .home{
-    height: 80vh;
+    min-height: fit-content;
     width: 80vw;
     display: flex;
-    
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin:12vh auto;
     border-radius: 45px;
-    border: 2px solid white;
+    border: 2px solid rgb(2, 198, 242);
+    padding: 19vh 4vw;
+background-color: rgb(31, 30, 30);
+    transition: .3s;
 
 
 }
 .home .intro{
+    
     color: white;
+    width: 30vw;
+    height: fit-content;
+
+}
+.intro h1{
+    font-size: 3rem;
 }
 .home img{
-    width: 25%;
-    height: 50%;
+    width: 25rem;
+    height: 25rem;
     border-radius: 20vh;
 }
+.home div{
+    height: fit-content;
+    width: fit-content;
+}
+
+.home .myWork{
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(2, 198, 242);
+    border-radius: 4rem;
+    padding: 10px;
+    margin-top: 10vh;
+    transform: 10s all linear;
+
+    
+}
+.myWork a{
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    font-family:"Merriweather", serife;
+}
+.home:hover{
+    border-color: rgb(163, 0, 251);
+    box-shadow: 0 0 4em -1em rgb(251, 0, 255);}
