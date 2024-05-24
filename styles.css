@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 :root{
     --border: rgb(2, 198, 242);
@@ -13,52 +14,60 @@
 
 }
 body{
-    background-color: rgb(16, 17, 16);
+    background-color: rgb(0, 0, 0);
 }
 nav{
-    background-color: black;
+    top: 0; 
+    background-color: rgb(5, 5, 5);
     display: flex;
+    width:fit-content;
+    height: fit-content;
     flex-direction: column;
     position: sticky;
-    top: 0;
     justify-content: space-between;
     align-items: center;
-    margin:.9rem;
+    margin:0 0.9vw;
+    border: 2px solid rgb(11, 183, 240);
+    border-top: none;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 
 }
 .firstTop{
     align-content: center;
     color: white;
-margin: 1rem;
-font-size:2rem;
+    
+    font-size:2rem;
 
-font-family: "Pacifico", cursive;
+    font-family: "Pacifico", cursive;
 
-  font-style: normal;
+    font-style: normal;
 }
 .firstBottom{
     display: flex;
-    justify-content: space-between;
-    WIDTH: 100vw;
-   
-    height: 4vh;
+    justify-content: space-evenly;
+    WIDTH: 96vw; 
+    height: fit-content;
+    margin-bottom: 2vh;
     
 }
 .linkBox{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     min-width: 75vw;
-    height:fit-content;
-    margin: 0 20px;
+    min-height: max-content;
+    margin: 0 3vw;
+
     flex-wrap: wrap;
     background-color: rgb(42, 41, 41);
     border-radius: 4rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .contactUs{
-    height: fit-content;
-    width: fit-content;
+    min-height: 6vh;
+    width: 6vw;
     color: white;
+    margin-right:8vw ;
     background-color: #04b5f5;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -66,30 +75,34 @@ font-family: "Pacifico", cursive;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 4rem;
     color: white;
-    position: absolute;
+    
     top: 25%;
-    font-size: 1rem; 
+    font-size: 2rem; 
     margin-left: 6vh;
 }
 .firstBottom div{
-    position: relative;
+    
     width: 8vw;
     height: 4vh;
 }
-.links a{
-    
+.linkBox a{
+    flex: 1 1 auto;
     text-decoration: none;
     margin: auto;
-    position: absolute;
-    top: 25%;
-    min-height: fit-content;
+    height: 4rem;
+    width: 6rem;
+    min-height: 6vh;
+    margin: 0 2vw;
     color: white;
+     
+    display: inline-block;
     text-shadow: 
         -2px -2px 0 #000,  /* Top left shadow */
         2px -2px 0 #000,   /* Top right shadow */
         -2px 2px 0 #000,   /* Bottom left shadow */
         2px 2px 0 #000;    /* Bottom right shadow */
-
+    font-size: 2rem;
+    
 }
 .links a:hover{
     color:blueviolet;
@@ -108,41 +121,54 @@ font-family: "Pacifico", cursive;
     color: white;
 }
 .links{
-    max-width: 1vh;
+    width: 6vh;
 }
 
 .home{
     min-height: fit-content;
-    width: 80vw;
+    width: 90vw;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-content: center;
+    align-items: start;
     margin:12vh auto;
     border-radius: 45px;
     border: 2px solid rgb(2, 198, 242);
-    padding: 19vh 4vw;
-background-color: rgb(31, 30, 30);
+    padding: 12vh 4vw;
+    background-color: rgb(31, 30, 30);
     transition: .3s;
 
 
 }
+
 .home .intro{
     
     color: white;
     width: 30vw;
+    
     height: fit-content;
 
 }
 .intro h1{
-    font-size: 3rem;
+    font-size: 4.5rem;
+    margin:0 0 0 10px;
 }
-.home img{
+.intro p{
+    font-size: 1.2rem;
+    
+}
+.home .imgHome{
     width: 25rem;
     height: 25rem;
+    margin:0 0 0 2vh;
     border-radius: 20vh;
 }
-.home div{
+.home img:hover{
+    border: 2px solid rgb(5, 255, 226);
+    
+}
+.home .imgBox{
     height: fit-content;
     width: fit-content;
 }
@@ -167,3 +193,55 @@ background-color: rgb(31, 30, 30);
 .home:hover{
     border-color: rgb(163, 0, 251);
     box-shadow: 0 0 4em -1em rgb(251, 0, 255);}
+.about{
+    background-color:rgb(0, 0, 0);
+    
+}
+.imgAbout{
+    width: 30rem;
+    height: 30rem;
+    border: 2px solid white;
+    border-radius: 1em;
+    margin: 4vh;
+    
+}
+.about .itemAbout{
+    color: white;
+    width: 30vw;
+
+    height: fit-content;
+}
+
+.itemAbout p{
+    color: rgb(5, 242, 246);
+    
+    margin-bottom: 15vh;
+    font-size: 4rem;
+}
+.itemAbout h1{
+    font-size: 2.5em;
+}
+
+
+.profession{
+    display: block;
+    width: 90vw;
+
+}
+.professionList{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+    justify-content: space-around;
+    margin: 10vh 0;
+    width: 80vw;
+
+}
+.professionEntity{
+    margin: 2vh 2vw;
+    height: fit-content;
+    width: 12rem;
+    background-color: white;
+}
