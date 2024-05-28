@@ -17,6 +17,7 @@ body{
     background-color: rgb(0, 0, 0);
 }
 nav{
+    z-index: 5;
     top: 0; 
     background-color: rgb(5, 5, 5);
     display: flex;
@@ -132,7 +133,7 @@ nav{
     justify-content: space-around;
     align-content: center;
     align-items: start;
-    margin:12vh auto;
+    margin:10vh auto 12vh auto;
     border-radius: 45px;
     border: 2px solid rgb(2, 198, 242);
     padding: 12vh 4vw;
@@ -158,11 +159,38 @@ nav{
     font-size: 1.2rem;
     
 }
+.home .imgBox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    height: fit-content;
+    width: fit-content
+
+}
 .home .imgHome{
     width: 25rem;
     height: 25rem;
     margin:0 0 0 2vh;
     border-radius: 20vh;
+    border: 2px solid rgb(255, 255, 255);
+}
+.homeIcons{
+    display: flex;
+ justify-content: space-between;
+
+   align-items: center;
+    margin: .4vh 2vw;
+}
+.home .homeIcons i{
+    
+    margin: 9vh 0.3vw 0 0 ;
+     font-size: 2rem;
+     color: white;
+     
+}
+.home .homeIcons i:hover{
+    color: rgb(0, 251, 251);
 }
 .home img:hover{
     border: 2px solid rgb(5, 255, 226);
@@ -226,9 +254,13 @@ nav{
 .profession{
     display: block;
     width: 90vw;
+    color: white;
 
 }
-.professionList{
+.professionHeader{
+    text-align: center;
+}
+/* .professionList{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -244,4 +276,295 @@ nav{
     height: fit-content;
     width: 12rem;
     background-color: white;
+} */
+
+.professionList{
+    margin-top:3vh ;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3vw;
+    border: 2px solid rgb(160, 241, 244);
+    border-radius: 2em;
+   max-width: max-content;
+   max-height: max-content;
+    column-gap: 4vh;
+    justify-items: center;
+    align-items: center;
+    padding: 4vh 4vw;
 }
+
+.professionEntity{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(42, 40, 40);
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    margin: 1rem;
+    border: 2px solid white;
+    border-radius: 2em;
+    transition: width .2s linear, height .2s linear;
+    padding: 2vh 2vw;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.professionEntity:hover{
+    width: 105%;
+    height: 115%;
+    opacity: 0.3;
+    background-color: rgba(0, 116, 249, 0.472);
+  
+}
+
+.professionEntity i{
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+    color: rgb(94, 72, 233);
+}
+
+.entityImg{
+    height: 7vh;
+    width:6vw;
+    align-self: center;
+}
+
+.professionEntity .cover{
+    
+    position: absolute;
+    /* height: 46vh; */
+    place-self: center;
+/* width: 24vw; */
+
+
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    
+   
+   
+    opacity: 0;
+    transition: all 0.2s linear ;
+}
+
+.professionEntity:hover .cover{
+   opacity:1;
+}
+
+.project{
+    display: block;
+   
+}
+
+.projectTitle{
+    text-align: center;
+    color: white;
+
+}
+
+.projectList{
+    display: grid;
+    height:100vh; 
+    width:70vw;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    
+    justify-content: center;
+    align-content: center;
+    margin: 3vh 0;
+    border: 4px solid rgb(192, 46, 236);
+    border-radius: 2em;
+    background-color: rgb(42, 40, 40);
+
+}
+
+.projectEntity{
+    color: white;
+    display: flex;
+    
+  
+    justify-content: space-between;
+    margin: 3vh 0;
+    border: 2px solid white;
+    border-radius: 2em;
+    
+    border:2px solid white ;
+    padding: 2vh 2vw;
+
+    
+}
+
+.projectEntity:hover{
+    border-color: rgb(251, 0, 92);
+    box-shadow: 0 0 2em -1em rgb(255, 0, 38);
+}
+
+.projectImgGroup{
+    background-color: rgb(33, 234, 153);
+    position: relative;
+    /* left: -10rem; */
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-template-rows: repeat(2,2fr);
+    width :30rem;
+    height:20rem;
+border-radius: 3em;
+border: 1px solid rgb(6, 250, 238);
+margin-right: 3vw;
+}
+
+.projectImg{
+    border:10em;
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+    
+    border: 1px solid rgb(6, 250, 238);
+}
+
+.projectDetail{
+    max-height:fit-content ;
+    width: fit-content;
+}
+
+
+.projectHeading {
+    text-align: center;
+   
+    font-size: 3rem;
+    margin: 3vh 3vw;
+    color: rgb(50, 235, 241);
+    text-shadow: 6px 9px 4px rgb(74, 129, 129);
+}
+.projectTitle h1{
+    font-size: 4rem;
+    text-align: center;
+    text-decoration:underline;
+}
+
+.projectTitle p{
+    font-size: 2rem;
+    text-align: center;
+
+}
+.skills{
+    display: block;
+    background-color: #000;
+    color: white;
+}
+.skillTitle h1{
+    text-align: center;
+    font-size: 4rem;
+    margin: 5vh 5vw;
+
+}
+
+.skillDetail{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3vh 3vw;
+}
+.skillEntity{
+    
+    border-radius: 10em;
+    background-color: rgb(48, 47, 48);
+    border: 5px solid #5be6d8;
+    box-shadow: 0 0 4px 5px rgb(87, 227, 227);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 18rem;
+    width: 10rem;
+    margin: 0 1vw;
+    transition: .1s all linear;
+}
+.skillEntity i{
+    font-size: 4rem;
+    color: white;
+
+}
+.skillEntity img{
+    width: 7vw;
+    height: 4vh;
+
+}
+.skillEntity h2{
+    margin: 2vh 0;
+    color:white
+}
+.skillEntity,i,h2:hover{
+    color: blue;
+   
+}
+
+.skillEntity:hover{
+    transform: scale(1.1);
+}
+.skillPortion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 3vh;
+    height: fit-content;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillPortion li h3{
+    color: white;
+
+    font-size: 2rem;
+    margin: 2vh 0;
+
+}
+.bar{
+    display: inline-block;
+    height: 3vh;
+    width: 40vw;
+    background-color: rgb(242, 240, 240);
+    margin: 1vh 0;
+    border-radius: 4em;
+
+}
+
+.portion{
+    display:block;
+    float: left;
+    height:100%;
+    width: 45%;
+    border-radius: 4em;
+    background: linear-gradient(90deg, rgb(0, 255, 195), rgb(97, 244, 97), rgb(97, 210, 72));
+}
+.portion:hover{
+    animation: portionlevel 1s forwards;
+ 
+}
+
+@keyframes portionlevel{
+   0%{
+    width: 100%;
+
+   }
+   100%{
+    width: 45%;
+   }
+}
+
+
+
+
+
+
+
