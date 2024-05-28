@@ -498,11 +498,11 @@ margin-right: 3vw;
     height: 4vh;
 
 }
-.skillEntity h2{
+.skillEntity .skillDetail{
     margin: 2vh 0;
     color:white
 }
-.skillEntity,i,h2:hover{
+.skillEntity i .skillDetail:hover{
     color: blue;
    
 }
@@ -536,31 +536,207 @@ margin-right: 3vw;
     background-color: rgb(242, 240, 240);
     margin: 1vh 0;
     border-radius: 4em;
-
+    
+}
+.bor:hover{
+    
+    
+    background: linear-gradient(90deg, rgb(0, 255, 195), rgb(52, 64, 222), rgb(210, 72, 192))
+    
 }
 
-.portion{
+.portion ,.C{
+    
     display:block;
     float: left;
     height:100%;
-    width: 45%;
+    width: 70%;
     border-radius: 4em;
-    background: linear-gradient(90deg, rgb(0, 255, 195), rgb(97, 244, 97), rgb(97, 210, 72));
-}
-.portion:hover{
-    animation: portionlevel 1s forwards;
- 
+    background: linear-gradient(90deg, rgb(0, 255, 195), rgb(66, 8, 239), rgb(201, 54, 184));
 }
 
-@keyframes portionlevel{
+
+
+.C:hover{
+     animation: C 1s forwards;
+ 
+}
+.Cpp{
+    width: 70%;
+}
+.Cpp:hover{
+    animation: Cpp 1s linear;
+}
+
+.python{
+    width: 80%;
+}
+.python:hover{
+    animation: python 1s linear;
+}
+.JavaScript{
+    width:60%;
+}
+.JavaScript:hover{
+    animation: JavaScript 1s linear;
+}
+.java{
+    width: 60%;
+}
+.java:hover{
+    animation: java 1s Linear;
+}
+.django{
+    width: 70%;
+}
+.django:hover{
+    animation: django 1s linear;
+} 
+
+@keyframes Cpp{
+    0%{
+     width: 100%;   
+    }   
+    100%{
+     width: 70%;
+    }
+}
+
+@keyframes python{
+    0%{
+     width: 100%;   
+    }   
+    100%{
+     width: 80%;
+    }
+}   
+
+@keyframes JavaScript{
+    0%{
+     width: 100%;   
+    }   
+    100%{
+     width: 60%;
+    }
+}
+@keyframes java{    
+    0%{
+     width: 100%;   
+    }   
+    100%{
+     width: 60%;
+    }
+}
+@keyframes django{
+    0%{
+     width: 100%;   
+    }   
+    100%{
+     width: 70%;
+    }
+}   
+
+@keyframes C{
    0%{
     width: 100%;
 
    }
    100%{
-    width: 45%;
+    width: 70%;
    }
 }
+
+
+
+
+
+.educationHeading{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin: 3vh 0;
+
+}
+.education{
+display: block;
+}
+
+.educationEntityBox{
+    display: grid;
+   
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 4vw;
+    row-gap: 4vh;
+    padding: 5vh 5vw;
+    
+    border: 2px solid rgb(215, 255, 70);
+    border-radius: 2em;
+    border: 2px solid wheat;
+    color: white;
+}
+.educationEntity{
+    transition: .3s all linear;
+    border: 3px solid white;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    width: inherit;
+}
+
+.educationImg{
+    
+    height: 50%;
+    width: 100%;
+   
+}
+.educationDetail{
+    width: 100%;
+    padding: 1rem 1rem;
+    height: inherit;
+    
+
+}
+
+.educationEntity:hover{
+    transform: scale(1.1);
+}
+
+.educationContact{
+
+    margin: 10vh 0;
+    height: 7vh;
+    width: 15vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 41, 234);
+    color: white;
+    border-radius: 2em;
+    position: relative;
+    left :40%;
+    border: 2px solid black;
+
+}
+.educationContact a{
+    text-decoration: none;
+   font-size: 120%;
+    
+    text-align: center;
+    color: white;
+}
+
+.educationContact:hover{
+    background-color: rgb(0, 251, 255);
+}
+
+
+
+
 
 
 
