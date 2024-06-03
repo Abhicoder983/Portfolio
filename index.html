@@ -12,6 +12,8 @@
             rel="stylesheet">
         <script src="https://kit.fontawesome.com/b1f8c3edb5.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="mediaQuery.css">
+
     </head>
 
     <body>
@@ -43,14 +45,41 @@
                     <a href="#contact">Contact</a>
 
                 </div>
-                
-                    <a href="" class="CV">Download CV</a>
-                
+
+                <a href="" class="CV">
+                    <i class="fa-solid fa-file-arrow-down downloadIcon"></i>
+                    <span class="downloadCV">Download</span>CV</a>
+                <div class="linkbar">
+                    <div class="dot" id="dot">
+                        <i class="fa-solid fa-bars" id="icon"></i>
+                        <i class="fa-solid fa-angle-down" id="downArrow"></i>
+                    </div>
+
+
+                </div>
+
 
             </div>
-
+            <div class="dotlink" id="dotlink">
+                <a href="#home"   id="listClicked1">Home</a>
+    
+    
+                <a href="#aboutUs"  id="listClicked2">AboutUs</a>
+    
+    
+                <a href="#services"  id="listClicked3">Services</a>
+    
+                <a href="#projects"  id="listClicked4">Projects</a>
+    
+                <a href="#skills" id="listClicked5">Skills</a>
+    
+                <a href="#education"  id="listClicked6">Education</a>
+                <a href="#contact"  id="listClicked7">Contact</a>
             </div>
+    
+            
         </nav>
+        
         <div class="home" id="home">
             <div class="intro">
                 <h1>
@@ -65,25 +94,25 @@
                 </p>
                 <div class="myWork">
                     <a href="#">
-                        Get My Work
+                        Contact Me
                     </a>
                 </div>
             </div>
             <div class="imgBox">
                 <img src="abhishek.jpg" alt="" class="imgHome">
                 <div class="homeIcons">
-                    <a href="https://www.instagram.com/kumarabhiguru_983/">
+                    <a href="https://www.instagram.com/kumarabhiguru_983/" target="_blank">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="https://www.facebook.com/profile.php?id=61559854991465">
+                    <a href="https://www.facebook.com/profile.php?id=61559854991465" target="_blank">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
-                    <a href="https://x.com/Abhishe7716700">
+                    <a href="https://x.com/Abhishe7716700" target="_blank">
 
 
                         <i class="fa-brands fa-x-twitter"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/abhishek-kumar983/">
+                    <a href="https://www.linkedin.com/in/abhishek-kumar983/" target="_blank">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </div>
@@ -233,9 +262,10 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas libero ea error,
                             dignissimos, quia quod ut porro sapiente illo suscipit? Enim, corporis voluptates? Veniam
                             eius rem quis amet dolore obcaecati quo dignissimos eos!</p>
-                            <div class="educationContact">
-                                <a href="https://github.com/Abhicoder983/Project-Related-to-Python" target="_blank">Open It</a>
-                            </div>
+                        <div class="educationContact">
+                            <a href="https://github.com/Abhicoder983/Project-Related-to-Python" target="_blank">Open
+                                It</a>
+                        </div>
                     </div>
                 </div>
 
@@ -251,9 +281,10 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas libero ea error,
                             dignissimos, quia quod ut porro sapiente illo suscipit? Enim, corporis voluptates? Veniam
                             eius rem quis amet dolore obcaecati quo dignissimos eos!</p>
-                            <div class="educationContact">
-                                <a href="https://github.com/Abhicoder983/Project-Related-to-Python" target="_blank">Open It</a>
-                            </div>
+                        <div class="educationContact">
+                            <a href="https://github.com/Abhicoder983/Project-Related-to-Python" target="_blank">Open
+                                It</a>
+                        </div>
                     </div>
                 </div>
 
@@ -299,7 +330,7 @@
                 </div>
                 <div class="skillEntity">
                     <i class="fa-brands fa-python"></i>
-                    <h2 class="skillDetail" >Python</h2>
+                    <h2 class="skillDetail">Python</h2>
                     <H2 class="skillDetail">80%</H2>
                 </div>
                 <div class="skillEntity">
@@ -322,7 +353,7 @@
                     </span>
                 </li>
                 <li>
-                    <h3> class="skillDetail"C++</h3><span class="bar"> <span class="portion  Cpp">
+                    <h3 class="skillDetail">C++</h3><span class="bar"> <span class="portion  Cpp">
 
                         </span>
 
@@ -396,5 +427,6 @@
         </div>
 
     </body>
+    <script src="menuBar.js"></script>
 
 </html>

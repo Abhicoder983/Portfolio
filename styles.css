@@ -19,6 +19,7 @@ body{
 
 
  nav{
+    
     z-index: 3;
     display: grid;
     position: sticky;
@@ -45,7 +46,7 @@ body{
     font-size: 2rem;
     margin: 0 3vw;
     border-bottom: 2px solid white;
-    font-family: "Pacifico", cursive;
+    
     
     color: white;
 
@@ -73,7 +74,7 @@ body{
     align-items: center;
     flex-wrap:wrap ;
     height: 100%;
-    width: 100%;
+    width: 95%;
     background-color: rgb(54, 53, 53);;
     height: fit-content;
     padding: 1vh 1vw;
@@ -90,17 +91,25 @@ body{
 }
 
 .firstBottom h2{
+    margin-left: 1vw;
     place-self: center;
 }
 .firstBottom .CV{
+    justify-self: center;
+    display: block;
     align-self: center;
-    color: white;
+    margin: 0 2vw;
     font-size: 1.5em;
     text-decoration: none;
     background-color: aqua;
     width: fit-content;
     padding: 1vh 1vw;
     border-radius: 2em;
+}
+
+
+.downloadIcon{
+    display:none;
 }
 .firstBottom .CV:hover{
     background-color: rgb(0, 255, 110);
@@ -111,6 +120,70 @@ body{
     transform: scale(1.2);
     /* text-shadow: 0px 10px 10px rgb(255, 0, 89)*/
 } 
+
+
+.linkbar{
+    display: none;
+   
+
+
+}
+.dot{
+    cursor: pointer;
+    display: flex;
+
+    
+    justify-content: center;
+    align-self: center;
+   align-items: center;
+    margin: .5rem 0;
+}
+.dot #icon{
+   
+    font-size: 2em;
+}
+.dot #downArrow{
+    color: white;
+    font-size: 2em;
+    display: none;
+}
+
+
+.dotlink{
+    
+    height: 97%;
+    width: 90%;
+   justify-self: center;
+    display: none;
+    flex-direction: column;
+    background-color: #454242;
+    justify-content: center;
+    color: blue;
+
+
+}
+.dotlink a{
+ 
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    height: 7vh;
+    width: 100%;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+.dotlink a:hover{
+    border-bottom: 2px solid black;
+    box-shadow: 0 2px 2px 2px black;
+    color:black;
+    background-color: white;
+
+}
+
+
+
 
  /*
 nav{
@@ -224,7 +297,7 @@ nav{
     width: 90vw;
     display: flex;
     flex-wrap: wrap-reverse;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
     align-items: start;
     margin:10vh auto 12vh auto;
@@ -265,7 +338,7 @@ nav{
 .home .imgHome{
     width: 25rem;
     height: 25rem;
-    margin:0 0 0 2vh;
+    margin:0 2vh;
     border-radius: 20vh;
     border: 2px solid rgb(255, 255, 255);
 }
@@ -317,11 +390,12 @@ nav{
     box-shadow: 0 0 4em -1em rgb(251, 0, 255);}
 .about{
     background-color:rgb(0, 0, 0);
-    
+    flex-wrap: nowrap;
 }
 .imgAbout{
-    width: 30rem;
-    height: 30rem;
+    place-self: center;
+    width: 30%;
+    height: 25rem;
     border: 2px solid white;
     border-radius: 1em;
     margin: 4vh;
@@ -330,7 +404,7 @@ nav{
 .about .itemAbout{
     color: white;
     width: 30vw;
-
+   
     height: fit-content;
 }
 
@@ -377,15 +451,15 @@ nav{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 3vw;
+    row-gap: 2rem;
     border: 2px solid rgb(160, 241, 244);
     border-radius: 2em;
-   max-width: max-content;
-   max-height: max-content;
-    column-gap: 4vh;
+    max-width: max-content;
+    max-height: max-content;
+    column-gap: 2rem;
     justify-items: center;
     align-items: center;
-    padding: 4vh 4vw;
+    padding: 3rem 2rem;
 }
 
 .professionEntity{
@@ -510,7 +584,11 @@ nav{
     height:20rem;
 border-radius: 3em;
 border: 1px solid rgb(6, 250, 238);
-margin-right: 3vw;
+margin: 3vw;
+}
+.projectDetail p{
+    place-self: center;
+    text-align: center;
 }
 
 .projectImg{
@@ -564,6 +642,7 @@ margin-right: 3vw;
     justify-content: space-evenly;
     align-items: center;
     margin: 3vh 3vw;
+    flex-wrap: wrap;
 }
 .skillEntity{
     
@@ -578,7 +657,7 @@ margin-right: 3vw;
     align-items: center;
     height: 18rem;
     width: 10rem;
-    margin: 0 1vw;
+    margin: 2rem 1rem;
     transition: .1s all linear;
 }
 .skillEntity i{
@@ -761,7 +840,7 @@ display: block;
     grid-template-rows: repeat(1, 1fr);
     column-gap: 4vw;
     row-gap: 4vh;
-    padding: 5vh 5vw;
+    padding: 2rem 2rem;
     
     border: 2px solid rgb(215, 255, 70);
     border-radius: 2em;
@@ -798,28 +877,26 @@ display: block;
 .educationEntity:hover{
     transform: scale(1.1);
 }
-
 .educationContact{
-
-
-}
-.educationContact a{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-   font-size: 120%;
-   margin: 10vh 0;
-   height: 7vh;
-   width: 15vw;
-   display:flex;
+   display: flex;
    justify-content: center;
    align-items: center;
+}
+
+
+.educationContact a{
+   padding: 2vh 2vw;
+    text-decoration: none;
+   font-size: 115%;
+    place-self: center;
+   margin: 10vh 0;
+   height: fit-content;
+   width:fit-content;
+  
    background-color: rgb(224, 41, 234);
    color: white;
    border-radius: 2em;
-   position: relative;
-   left :40%;
+   
    border: 2px solid black;
     
     text-align: center;
